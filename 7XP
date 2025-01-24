@@ -1,12 +1,93 @@
 
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/SnoobG/Redz-Library/refs/heads/main/src")))()
-MakeWindow({
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/speedwave1/speed_wave/refs/heads/main/i2att")))()
+   MakeWindow({
 	Hub = {
 	  Title = "ahlam aleasr hub",
 	  Animation = "ahlam aleasr"
 	},
 	  Key = {
-    KeySystem = true,
+    KeySystem = false,
     Title = "ahlam aleasr",
     Description = "https://discord.gg/7xp",
     KeyLink = "https://discord.gg/7xp",
@@ -161,6 +242,16 @@ AddButton(Main2, {
   })
 
 
+
+  
+  AddButton(Main2, {
+	Name = "كودكس سكربت",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NathTheDev/Project/main/Codex"))()
+	end
+  })
+
+
   local section = AddSection(Main2, {"Script"})
 
 
@@ -179,5 +270,68 @@ local section = AddSection(Main3, {"VERSION"})
 
 
 SetSection(section, "VERSION 1.0")
+
+
+local Main4 = MakeTab({Name = "الاعدادات"})
+local section = AddSection(Main4, {"settings"})
+SetSection(section, "setting")
+
+-- Declare speed variable
+local speed
+
+-- Slider
+AddSlider(Main4, {
+    Name = "speed",
+    Increase = 1,
+    MinValue = 10,
+    MaxValue = 1000,
+    Default = 16,
+    Callback = function(value)
+        speed = value
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+    end
+})
+
+
+-- Declare speed variable
+local jump
+
+-- Slider
+AddSlider(Main4, {
+    Name = "jump",
+    Increase = 1,
+    MinValue = 10,
+    MaxValue = 500,
+    Default = 50,
+    Callback = function(value)
+        jump = value
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = jump
+    end
+})
+
+
+
+
+AddButton(Main4, {
+	Name = "هيدلس",
+	Callback = function()
+		game.Players.localPlayer.Character.Head.Size = Vector3.new(0,0,0)
+	end
+  })
+
+
+  AddButton(Main4, {
+    Name = "اخذ كلبشة هيلو كيتي شاليه محمد",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        local tool = game.ServerStorage:FindFirstChild("كلبشة هيلو كيتي") -- Replace "ToolName" with the actual name of the tool
+        if tool then
+            tool:Clone().Parent = player.Backpack
+        else
+            print("Tool not found in ServerStorage")
+        end
+    end
+})
+
 
 print("run")
