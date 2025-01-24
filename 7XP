@@ -725,6 +725,7 @@ local section = AddSection(Main3, {"VERSION"})
 
 
 SetSection(section, "VERSION 1.1")
+local section = AddSection(Main3, {"Update"})
 SetSection(section, "لقد تمت اضافة سكربتات جديده")
 
 -- قائمة الاخيره
