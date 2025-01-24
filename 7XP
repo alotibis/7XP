@@ -443,6 +443,7 @@
 
 
 
+
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/speedwave1/speed_wave/refs/heads/main/i2att")))()
    MakeWindow({
 	Hub = {
@@ -681,7 +682,7 @@ AddButton(Main2, {
 
 -- رابع قائمة
   local Main5 = MakeTab({Name = "Brookhaven"})
-  local section = AddSection(Main2, {"Brookhaven"})
+  local section = AddSection(Main5, {"Brookhaven"})
   SetSection(section, "Brookhaven")
 
   AddButton(Main5, {
@@ -722,6 +723,7 @@ local section = AddSection(Main3, {"VERSION"})
 
 
 SetSection(section, "VERSION 1.1")
+SetSection(section, "لقد تمت اضافة سكربتات جديده")
 
 -- قائمة الاخيره
 local Main4 = MakeTab({Name = "Settings"})
