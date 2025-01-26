@@ -1,3 +1,36 @@
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")print("hello")
+print("hello")print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
+print("hello")
 
 
 
@@ -447,12 +480,13 @@
 
 
 
+print("hello")
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/speedwave1/speed_wave/refs/heads/main/i2att")))()
    MakeWindow({
 	Hub = {
 	  Title = "ahlam aleasr hub ",
     SubTitle = "7XP",
-	  Animation = "ahlam aleasr v1.1"
+	  Animation = "ahlam aleasr v1.2"
 	},
 	  Key = {
     KeySystem = false,
@@ -478,7 +512,14 @@ MinimizeButton({
 	StrokeColor = Color3.fromRGB(255, 0, 0)
   })
 
--- قسم الحقوق سيكون أول قسم
+-- Main
+
+
+
+
+
+
+
 local Main = MakeTab({Name = "By"})
 local section = AddSection(Main, {"حقوق"})
 SetSection(section, "الحقوق")
@@ -492,11 +533,18 @@ AddButton(Main, {
 })
  
 AddButton(Main, {
-	Name = "الديسكورد (اضغط للنسخ)",
+	Name = "الديسكورد الرسمي (اضغط للنسخ)",
 	Callback = function()
-	  setclipboard("https://discord.gg/7xp")
+	  setclipboard("https://discord.gg/h7nf72np2C")
 	end
   })
+
+  AddButton(Main, {
+    Name = "ديسكورد التحديثات (اضغط للنسخ)",
+    Callback = function()
+      setclipboard("https://discord.gg/BrwamKHtmN")
+    end
+    })
 
   AddButton(Main, {
     Name = "طرد كل الناس",
@@ -504,7 +552,6 @@ AddButton(Main, {
 		game.Players.LocalPlayer:kick("مصدق ياهطف انك تطرد الناس كلهم؟.")
 	  end
 })
-
 
 
 local Main6 = MakeTab({Name = "Info"})
@@ -558,6 +605,7 @@ end
 -- بدء تحديث مدة اللعب
 spawn(updatePlayTime)
 -- ثالث قائمة
+
 local Main2 = MakeTab({Name = "script"})
 local section = AddSection(Main2, {"script"})
 SetSection(section, "Script")
@@ -678,84 +726,130 @@ AddButton(Main2, {
 	end
   })
 
-
-  local section = AddSection(Main2, {"Script"})
-
-
-  SetSection(section, "نعتذر ل قلة سكربتات لان سكربت جديد")
-
-
--- رابع قائمة
-  local Main5 = MakeTab({Name = "Brookhaven"})
-  local section = AddSection(Main5, {"Brookhaven"})
-  SetSection(section, "Brookhaven")
-
-  AddButton(Main5, {
-    Name = "admin chat",
+  AddButton(Main2, {
+    Name = "تخريب 1",
     Callback = function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hex/main/Iv%20Admin%20v3.lua'))()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Ndora1/Ndora1/refs/heads/main/Halloween.lua'))()
     end
     })
 
-    AddButton(Main5, {
-      Name = "IceHub",
+    AddButton(Main2, {
+      Name = "ايم بوت هيت بوكس",
       Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven'))()
+        print("button pressed")-- RX ALMAHRI --
+        --سكربت هت بوكس
+       wait(0.1)
+      game.StarterGui:SetCore("SendNotification", {
+     Title = "تم التشغيل";
+    Text = "تم تشغيل السكربت"; -- ARAB TEAM
+   Duration = 5;
+  })
+_G.Hotbox = true
+
+_G.HeadSize = 20
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
       end
       })
 
-      AddButton(Main5, {
-        Name = "Kill",
+
+      AddButton(Main2, {
+        Name = "ايم بوت kat",
         Callback = function()
-          loadstring(game:HttpGet("https://raw.githubusercontent.com/zetkan/zetkan/main/zetkans"))()
+          loadstring(game:HttpGet("https://pastebin.com/raw/KscB6AS9"))()
         end
         })
 
-
-        AddButton(Main5, {
-          Name = "Copy Skin",
+        AddButton(Main2, {
+          Name = "سكربت الكفوف ",
           Callback = function()
-            loadstring(game:HttpGet("https://scriptblox.com/raw/Brookhaven-RP-REDz-HUB-6559"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/castycheat/abilitywars/main/Protected%20(29).lua"))()
           end
           })
 
-local Main3 = MakeTab({Name = "Update"})
-local section = AddSection(Main3, {"update"})
-SetSection(section, "Update")
+    AddButton(Main2, {
+      Name = "تخريب",
+      Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Haxker666-Script-hub-9666"))()
+      end
+      })
+
+      AddButton(Main2, {
+        Name = "pls donate",
+        Callback = function()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+        end
+        })  
+        
+        AddButton(Main2, {
+          Name = "VR7 تخريب",
+          Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/VR7-ON-TOP"))()
+          end
+          })
+ 
 
 
+-- رابع قائمة
+
+local Main5 = MakeTab({Name = "Pranter"})
+local section = AddSection(Main5, {"Pranter"})
+SetSection(section, "لايوجد لحد الان")
+
+
+
+          local Main7 = MakeTab({Name = "Mm2"})
+          local section = AddSection(Main3, {"Mm2"})
+SetSection(section, "Soon")
+
+
+          local Main3 = MakeTab({Name = "Update"})
 local section = AddSection(Main3, {"VERSION"})
-
-
+SetSection(section, "Update")
 SetSection(section, "VERSION 1.1")
-SetSection(section, "لقد تمت اضافة سكربتات جديده")
+local section = AddSection(Main3, {"update"})
+SetSection(section, "كل تحديثات في ديسكورد")
 
--- قائمة الاخيره
+
+
+
+
+
 local Main4 = MakeTab({Name = "Settings"})
 local section = AddSection(Main4, {"settings"})
 SetSection(section, "setting")
 
--- Declare speed variable
+-- local
 local speed
-
--- Slider
-AddSlider(Main4, {
-    Name = "speed",
-    Increase = 1,
-    MinValue = 3,
-    MaxValue = 1000,
-    Default = 16,
-    Callback = function(value)
-        speed = value
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
-    end
-})
-
-
--- Declare speed variable
 local jump
 
 -- Slider
+AddSlider(Main4, {
+  Name = "speed",
+  Increase = 1,
+  MinValue = 3,
+  MaxValue = 1000,
+  Default = 16,
+  Callback = function(value)
+      speed = value
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+  end
+})
 AddSlider(Main4, {
     Name = "jump",
     Increase = 1,
@@ -770,6 +864,7 @@ AddSlider(Main4, {
 
 
 
+-- button
 AddButton(Main4, {
 	Name = "هيدلس",
 	Callback = function()
@@ -778,18 +873,78 @@ AddButton(Main4, {
   })
 
 
+
+
+  local targetPlayerName = ""
+
+  -- TextBox لإدخال جزء من اسم اللاعب
+  AddTextBox(Main4, {
+    Name = "اكتب حرف واحد من اسم الاعب الاصلي",
+    Default = "اسم الاعب",
+    PlaceholderText = "اسم الاعب",
+    ClearText = true,
+    Callback = function(value)
+      targetPlayerName = value
+    end
+  })
+  
+  -- Button للانتقال إلى اللاعب
   AddButton(Main4, {
-    Name = " edit اخذ كلبشة هيلو كيتي شاليه محمد",
-     setclipboard("https://discord.gg/7xp")
-})
+      Name = "Teleport to Player",
+      Callback = function()
+          local player = game.Players.LocalPlayer
+          local targetPlayer = nil
+  
+          -- البحث عن اللاعب باستخدام جزء من الاسم
+          for _, p in pairs(game.Players:GetPlayers()) do
+              if string.find(string.lower(p.Name), string.lower(targetPlayerName)) then
+                  targetPlayer = p
+                  break
+              end
+          end
+  
+          if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+              player.Character.HumanoidRootPart.CFrame = targetPlayer.Character.HumanoidRootPart.CFrame
+          else
+              warn("Player not found or player does not have a HumanoidRootPart")
+          end
+      end
+  })
+  
+  -- ...existing code...
+
+-- ...existing code...
+
+-- ...existing code...targetPlayerName = value
 
 
 
+
+
+
+ 
+-- ...existing code...
+
+-- ...existing code...
+
+
+
+-- ...existing code...
+-- ...existing code...
+
+
+-- notfication
 MakeNotifi({
   Title = "اهلا بك في سكربت",
   Text = "سكربت  كلبشة هيلو كيتي خربان",
   Time = 10
 })
+
+
+
+
+-- others
+print("on")
 
 
 
