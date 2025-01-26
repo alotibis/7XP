@@ -1585,7 +1585,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/speedwave1/speed_wav
 	Hub = {
 	  Title = "ahlam aleasr hub ",
     SubTitle = "7XP",
-	  Animation = "ahlam aleasr v1.2"
+	  Animation = "ahlam aleasr v1.2 Beta"
 	},
 	  Key = {
     KeySystem = false,
