@@ -1661,20 +1661,12 @@ SetSection(section, "Info Player")
 
 -- إضافة صورة اللاعب
 local Image = AddImageLabel(Main6, { 
-  Name = "xmn95_14", 
-  Image = "rbxassetid://85603875462695" 
-})
-local section = AddSection(Main6, {"superstaff"})
-SetSection(section, "superstaff : 7c1l")
-
--- إضافة صورة اللاعب
-local Image = AddImageLabel(Main6, { 
-  Name = "a7md_58", 
-  Image = "rbxassetid://135693816049418" 
+  Name = "hima82928", 
+  Image = "rbxassetid://84543247767791" 
 })
 
 local section = AddSection(Main6, {"Coowner"})
-SetSection(section, "CoOwner : hamza03275")
+SetSection(section, "Owner : x_lt")
 
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
