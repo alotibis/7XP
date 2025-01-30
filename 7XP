@@ -1899,7 +1899,7 @@ end)
 -- رابع قائمة
 
 local Main5 = MakeTab({Name = "Pranter"})
-local section = AddSection(Main6, {"Pranter"})
+local section = AddSection(Main5, {"Pranter"})
 SetSection(section, "لايوجد لحد الان")
 
 
