@@ -1660,7 +1660,7 @@ SetSection(section, "Info Player")
 
 
 -- إضافة صورة اللاعب
-local Image = AddImageLabel(Main6, { 
+  Image = AddImageLabel(Main6, { 
   Name = "hima82928", 
   Image = "rbxassetid://84543247767791" 
 })
