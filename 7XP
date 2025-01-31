@@ -1580,12 +1580,13 @@ print("hello")
 
 
 print("Okay")
+print("hello")
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/speedwave1/speed_wave/refs/heads/main/i2att")))()
    MakeWindow({
 	Hub = {
 	  Title = "ahlam aleasr hub ",
     SubTitle = "7XP",
-	  Animation = "ahlam aleasr v1.2 Beta"
+	  Animation = "ahlam aleasr v1.2"
 	},
 	  Key = {
     KeySystem = false,
@@ -1655,18 +1656,62 @@ AddButton(Main, {
 
 local Main6 = MakeTab({Name = "Info"})
 local section = AddSection(Main6, {"Info"})
-SetSection(section, "Info Player")
+SetSection(section, "Info Owner Discord")
 
+  
+    
 
-
--- إضافة صورة اللاعب
-  Image = AddImageLabel(Main6, { 
-  Name = "hima82928", 
+local Image = AddImageLabel(Main6, { 
+  Name = "Owner", 
   Image = "rbxassetid://84543247767791" 
 })
 
 local section = AddSection(Main6, {"Coowner"})
 SetSection(section, "Owner : x_lt")
+
+
+-- تخزين عدد الزوار في متغير
+local dataStore = game:GetService("DataStoreService"):GetDataStore("VisitorCount")
+
+-- دالة لزيادة عدد الزوار وعرضه
+local function increaseAndDisplayVisitorCount(player)
+    local success, currentCount = pcall(function()
+        return dataStore:GetAsync("visitorCount")
+    end)
+
+    if success then
+        -- إذا كانت النتيجة غير موجودة، نعيد العدد إلى 0
+        if not currentCount then
+            currentCount = 0
+        end
+
+        -- زيادة العدد
+        currentCount = currentCount + 1
+
+        -- حفظ العدد الجديد
+        local saveSuccess, errorMessage = pcall(function()
+            dataStore:SetAsync("visitorCount", currentCount)
+        end)
+
+        if saveSuccess then
+            print("عدد الزوار الحالي: " .. currentCount)
+
+            -- إضافة عدد الزوار إلى الواجهة (UI)
+            local section = AddSection(Main6, {"UserId"})
+            SetSection(section, "Player acript: "\nVisitor Count: " .. currentCount)
+        else
+            warn("حدث خطأ أثناء حفظ العدد: " .. errorMessage)
+        end
+    else
+        warn("حدث خطأ أثناء استرجاع العدد: " .. currentCount)
+    end
+end
+
+-- استدعاء دالة الزيادة عند دخول لاعب جديد
+game.Players.PlayerAdded:Connect(function(player)
+    increaseAndDisplayVisitorCount(player)
+end)
+
 
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
@@ -1778,7 +1823,7 @@ AddButton(Main2, {
   AddButton(Main2, {
 	Name = "شاليه محمد",
 	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/TvonHub%20Shaleh%20M7md%20v2'))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/Tvon%20Hub%20Shaleh%20m7md"))()
 	end
   })
 
@@ -1900,13 +1945,76 @@ end)
 
 local Main5 = MakeTab({Name = "Pranter"})
 local section = AddSection(Main5, {"Pranter"})
-SetSection(section, "لايوجد لحد الان")
+SetSection(section, "Pranter")
 
 
 
           local Main7 = MakeTab({Name = "Mm2"})
           local section = AddSection(Main7, {"Mm2"})
 SetSection(section, "Soon")
+
+
+local Main8 = MakeTab({Name = "shalih muhamad"})
+local section = AddSection(Main8, {"pa"})
+SetSection(section, "شاليه محمد")
+
+AddButton(Main8, {
+  Name = "سكربت نسخ قوي شاليه محمد لاتشغله غير بحالات حرجه لانه مايتوقف",
+  Callback = function()
+
+      -- Function to send a message to the chat
+    function sendMessage(message)
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+    end
+
+    -- Function to toggle the message
+    function toggleMessage(message, delay)
+        while true do
+            sendMessage(message)
+            wait(delay)
+            sendMessage(".........................................................................................................") -- Clear the message
+            wait(delay)
+        end
+    end
+
+    -- Start toggling the message
+    toggleMessage(".........................................................................................................", 0.5) -- Adjust the delay as needed
+end
+})
+
+
+
+AddButton(Main, {
+  Name = "تشغيل أمر HD Admin",
+  Callback = function()
+    local function sendMessage(message)
+      local chatEvent = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents")
+      if chatEvent and chatEvent:FindFirstChild("SayMessageRequest") then
+          chatEvent.SayMessageRequest:FireServer(message, "All")
+      else
+          warn("نظام الشات الافتراضي غير موجود")
+      end
+  end
+
+  -- تنفيذ أمر HD Admin
+  local function executeHDAdminCommand(command)
+      local hdAdminEvent = game:GetService("ReplicatedStorage"):FindFirstChild("HDAdminEvent") -- تأكد من وجود الحدث
+      if hdAdminEvent then
+          hdAdminEvent:FireServer(command)
+      else
+          warn("لم يتم العثور على HDAdminEvent في ReplicatedStorage")
+      end
+  end
+
+  -- إرسال الرسالة في الشات
+  sendMessage(";char me ARDA41442") -- هذا الأمر يظهر في الشات
+
+  -- تنفيذ الأمر عبر HD Admin
+  executeHDAdminCommand(";char me ARDA41442") -- تأكد أن الأمر متوافق مع HD Admin
+end
+})
+
+
 
 
           local Main3 = MakeTab({Name = "Update"})
@@ -2001,30 +2109,10 @@ AddButton(Main4, {
           end
       end
   })
-  
-  -- ...existing code...
 
--- ...existing code...
-
--- ...existing code...targetPlayerName = value
+-- button
 
 
-
-
-
-
- 
--- ...existing code...
-
--- ...existing code...
-
-
-
--- ...existing code...
--- ...existing code...
-
-
--- notfication
 MakeNotifi({
   Title = "اهلا بك في سكربت",
   Text = "سكربت  كلبشة هيلو كيتي خربان",
