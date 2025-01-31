@@ -1934,7 +1934,7 @@ end
   AddButton(Main8, {
 	Name = "شاليه محمد",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/Tvon%20Hub%20Shaleh%20m7md"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/Tvon%20Hub%20Shaleh%20M7md%20v2"))()
 	end
   })
 
