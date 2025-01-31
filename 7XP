@@ -1931,12 +1931,7 @@ AddButton(Main8, {
 end
 })
 
-  AddButton(Main8, {
-	Name = "شاليه محمد",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/TvonHub%20Shaleh%20M7md%20v2'))()
-	end
-  })
+  
 
         AddButton(Main8, {
           Name = "VR7 تخريب",
