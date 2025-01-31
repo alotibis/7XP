@@ -1779,12 +1779,7 @@ AddButton(Main2, {
   })
 
 
-  AddButton(Main5, {
-	Name = "شاليه محمد",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/Tvon%20Hub%20Shaleh%20m7md"))()
-	end
-  })
+
 
 
   AddButton(Main2, {
@@ -1891,12 +1886,7 @@ end)
         end
         })  
         
-        AddButton(Main5, {
-          Name = "VR7 تخريب",
-          Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/VR7-ON-TOP"))()
-          end
-          })
+
  
 
 
@@ -1941,7 +1931,19 @@ AddButton(Main8, {
 end
 })
 
+  AddButton(Main8, {
+	Name = "شاليه محمد",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SnoobG/Lua-Script-s/refs/heads/main/Tvon%20Hub%20Shaleh%20m7md"))()
+	end
+  })
 
+        AddButton(Main8, {
+          Name = "VR7 تخريب",
+          Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/VR7-ON-TOP"))()
+          end
+          })
 
 
 --
